@@ -10,23 +10,11 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-#df = pd.read_csv(r'/Users/alexander/Downloads/sales_data_sample.csv', encoding = "ISO-8859-1")
+df = pd.read_csv(r'/Users/alexander/Downloads/sales_data_sample.csv', encoding = "ISO-8859-1")
 
 
 
 st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
-
-# ---- READ EXCEL ----
-@st.cache
-def get_data_from_excel():
-    df = pd.read_excel(
-        io="sales_data_sample.xlsx",
-        engine="openpyxl",
-        sheet_name="sales_data_sample",
-        skiprows=0,
-        usecols="A:Y",
-        nrows=2824,
-    )
 
 
 
