@@ -10,7 +10,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-df = pd.read_csv(r'/Users/alexander/Downloads/sales_data_sample.csv', encoding = "ISO-8859-1")
+#df = pd.read_csv(r'/Users/alexander/Downloads/sales_data_sample.csv', encoding = "ISO-8859-1")
 
 print(df)
 
@@ -27,7 +27,7 @@ def get_data_from_excel():
         usecols="A:Y",
         nrows=2824,
     )
-    # Add 'hour' column to dataframe
+
 
 
 
