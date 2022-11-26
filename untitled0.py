@@ -10,7 +10,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-df = pd.read_csv(sales_data_sample.csv, encoding = "ISO-8859-1")
+df = pd.read_csv("sales_data_sample.csv", encoding = "ISO-8859-1")
 
 
 
